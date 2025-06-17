@@ -7,32 +7,6 @@
 </p>
 
 
-## Contents <!-- omit in toc -->
-
-- [Overview](#overview)
-  - [Introduction](#introduction)
-  - [Key Features](#key-features)
-  - [Model Architecture](#model-architecture)
-  - [Performance](#performance)
-- [Quickstart](#quickstart)
-  - [Transformers Usage](#--transformers-usage)
-  - [ModelScope Usage](#-modelscope-usage)
-  - [GPTQ-Int4 and AWQ Usage](#gptq-int4-and-awq-usage)
-  - [Usage Tips](#usage-tips)
-  - [Cookbooks for More Usage Cases](#cookbooks-for-more-usage-cases)
-  - [API inference](#api-inference)
-  - [Customization Settings](#customization-settings)
-- [Chat with Qwen2.5-Omni](#chat-with-qwen25-omni)
-  - [Online Demo](#online-demo)
-  - [Launch Local Web UI Demo](#launch-local-web-ui-demo)
-  - [Real-Time Interaction](#real-time-interaction)
-- [Deployment with vLLM](#deployment-with-vllm)
-- [Deployment with MNN](#deployment-with-mnn)
-- [Docker](#-docker)
-<!-- - [Citation](#citation) -->
-
-
-
 ## Quickstart
 
 Below, we provide simple examples to show how to use Qwen2.5-Omni with 🤖 ModelScope and 🤗 Transformers.
