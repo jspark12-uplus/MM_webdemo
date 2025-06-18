@@ -11,15 +11,16 @@ from qwen_omni_utils import process_mm_info
 def try_load_model():
     try:
         model = Qwen2_5OmniForConditionalGeneration.from_pretrained(
-            "Qwen/Qwen2.5-Omni-7B",
-            torch_dtype="bfloat16",
-            # device_map="auto",
-            attn_implementation="flash_attention_2",
-            cache_dir="/data/public/models",
+            "/data/public/models/models--Qwen--Qwen2.5-Omni-7B/",
+            torch_dtype=torch.bfloat16,
+            device_map="auto",
+            trust_remote_code=True
         )
-        processor = Qwen2_5OmniProcessor.from_pretrained(
-            "Qwen/Qwen2.5-Omni-7B", cache_dir="/data/public/models",)
 
+        processor = Qwen2_5OmniProcessor.from_pretrained(
+            "/data/public/models/models--Qwen--Qwen2.5-Omni-7B/",
+            trust_remote_code=True
+        )
         return model, processor, True
     except Exception as e:
         return None, None, False
