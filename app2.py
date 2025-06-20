@@ -42,7 +42,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🎥 Qwen2.5-Omni 멀티모달 데모")
+st.title("LMM 모델 inference 데모")
 
 # 상태 표시
 if is_model_ready:
